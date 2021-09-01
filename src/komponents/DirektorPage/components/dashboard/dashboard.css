@@ -1,0 +1,219 @@
+.dashboard-top {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-top .top-card {
+  position: relative;
+  width: 19%;
+  height: 150px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background: #626ed4;
+}
+.dashboard-top .card-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: hsla(0, 0%, 100%, 0.15);
+  color: #fff;
+  font-size: 23px;
+}
+.dashboard-top .card-title,
+.dashboard-top .count {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #bcd7f5;
+}
+.dashboard-top .count {
+  top: 50px;
+  font-size: 13px;
+  color: #fff;
+}
+.dashboard-top .date {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 13px;
+  color: #bcd7f5;
+}
+.filter-box {
+  background: #2a3142;
+  padding: 10px 12px;
+  border-radius: 12px;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-box .date-range {
+  position: absolute;
+  top: 170px;
+  right: 30px;
+  z-index: 9;
+  background: #2a3142;
+  padding: 5px;
+  border-radius: 5px;
+  height: 0;
+  padding: 0;
+  visibility: hidden;
+}
+.filter-box .date-range.toggle {
+  height: 110px;
+  padding: 9px;
+  visibility: visible;
+}
+.filter-box input,
+.filter-box select {
+  display: block;
+  border: 1px solid #343e55;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px;
+  padding: 5px 14px;
+  background: #2a3142;
+  color: #fff;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.filter-box span {
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 14px;
+  border-radius: 7px;
+  background: #2a3142;
+}
+.filter-box span:hover {
+  background: #626ed4;
+}
+.total-datas {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 150%;
+  align-items: center;
+}
+.total-datas .total-item {
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  min-height: 100%;
+  background: #2a3142;
+  border-radius: 5px;
+  margin: 5px;
+}
+.control-product {
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+  width: 100%;
+  align-items: center;
+}
+.control-product .control-product-item {
+  display: flex;
+  justify-content: center;
+  min-height: 80px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .dashboard-top {
+    height: 100%;
+    width: 100%;
+  }
+  .dashboard-top .top-card {
+    width: 100%;
+    height: 150px;
+  }
+  .page-header {
+    flex-direction: column;
+  }
+  .filter-box {
+    width: 100%;
+    flex-direction: column;
+  }
+  .filter-box span {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .filter-box input,
+  .filter-box select {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .total-datas {
+    flex-direction: column;
+    align-items: unset;
+    width: 100%;
+  }
+  .control-product .control-product-item {
+    flex-direction: column;
+    width: 100%;
+    align-items: unset;
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .filter-box {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .filter-box {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .dashboard-top {
+    justify-content: space-around;
+  }
+  .dashboard-top .top-card {
+    width: 420px;
+  }
+  .graphics {
+    width: 100%;
+  }
+  .filter-box {
+    width: 80%;
+  }
+  .total-datas {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    align-items: center;
+  }
+  .control-product {
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    width: 100%;
+    align-items: center;
+  }
+  .control-product .control-product-item {
+    display: flex;
+    justify-content: center;
+    min-height: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

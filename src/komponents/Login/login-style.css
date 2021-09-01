@@ -1,0 +1,88 @@
+/* .account-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.account-page .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-page .container .card {
+  width: 40%;
+  margin: 0 auto;
+  border: none;
+  background: #2a3142;
+  border: 1px solid #2a3142;
+}
+.account-page .container .card-header {
+  position: relative;
+  text-align: center;
+  background: #626ed4 !important;
+  color: #fff;
+}
+.account-page .container .card-header p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #a6b9ce;
+  font-size: 14px;
+}
+.account-page .container .logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 74px;
+  height: 74px;
+  line-height: 74px;
+  background: #2a3142;
+  border-radius: 50%;
+  /* border-bottom: 2px solid rgb(223, 88, 54); */
+}
+.account-page .container .logo img {
+  width: 100%;
+}
+.account-page .container .card .card-body form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  height: 300px;
+}
+.account-page .form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.94rem + 2px);
+  padding: 0.47rem 0.75rem;
+  margin-bottom: 25px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #9ca8b3;
+  background-color: #2e3648;
+  background-clip: padding-box;
+  border: 1px solid #363e54;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.account-page .card-body label {
+  color: #fff;
+}
+.error {
+  color: red !important;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (max-width: 768px) {
+  .account-page .container .card {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .account-page .container .card {
+    width: 70%;
+  }
+}

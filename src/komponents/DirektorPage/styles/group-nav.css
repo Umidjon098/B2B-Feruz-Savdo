@@ -1,0 +1,24 @@
+.group-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.group-nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  background: #2a3142;
+  margin: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .group-nav div {
+    margin: 5px;
+    padding: 0 5px;
+  }
+}

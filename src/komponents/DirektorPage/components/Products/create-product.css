@@ -1,0 +1,11 @@
+.department-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background: #2a3142;
+}
+.department-box input {
+  background: #353e53 !important;
+}

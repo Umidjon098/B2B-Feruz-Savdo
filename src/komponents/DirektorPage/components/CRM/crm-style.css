@@ -1,0 +1,117 @@
+.crm-page-header {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: 24% 24% 24% 24%;
+}
+.crm-box {
+  position: relative;
+  height: 130px;
+  width: 100%;
+  background: #626ed4;
+  border-radius: 12px;
+}
+.crm-box .card-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: hsla(0, 0%, 100%, 0.15);
+  color: #fff;
+  font-size: 23px;
+}
+.crm-box .count {
+  position: absolute;
+  top: 20px;
+  left: 90px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #bcd7f5;
+}
+.crm-box .card-title {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+  font-size: 13px;
+  color: #bcd7f5;
+}
+._expense.crm-page-header {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: 32% 32% 32%;
+}
+.form-edit-client {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  width: 86%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s all ease-out;
+  padding: 40px 20px;
+}
+.form-edit-client.toggle {
+  height: 300px;
+  overflow: unset;
+  opacity: 1;
+  visibility: visible;
+}
+.form-edit-client form .col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-edit-client .col-md-3 input,
+.form-edit-client .col-md-3 select {
+  display: block;
+  width: 100%;
+  border: none;
+  background: #353e53;
+  padding: 5px 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  min-height: 39px;
+  outline: none;
+  color: #8699ad;
+  backdrop-filter: blur(10px);
+}
+.form-edit-client button {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .crm-page-header {
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+  .crm-box {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  ._expense.crm-page-header {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .crm-page-header {
+    width: 97%;
+  }
+}

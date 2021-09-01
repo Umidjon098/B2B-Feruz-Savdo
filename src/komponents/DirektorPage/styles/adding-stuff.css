@@ -1,0 +1,88 @@
+.adding-staff-box input,
+.adding-staff-box select,
+.adding-staff-box textarea {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border-radius: 5px;
+  min-height: 39px;
+  outline: none;
+  background: #353e53;
+  color: #dee2e6;
+}
+.adding-staff-box textarea {
+  min-height: 79px;
+}
+.adding-staff-box button {
+  position: relative;
+  right: 0;
+  top: -2px;
+  width: 100%;
+  border: none;
+  min-height: 39px;
+}
+.adding-staff-box .btn-plus {
+  width: 50px;
+}
+.adding-staff-box span {
+  color: #dee2e6;
+  font-size: 14px;
+}
+.adding-staff .form-box {
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+  padding: 0 !important;
+}
+
+.adding-staff .form-box.toggle {
+  height: 550px;
+  opacity: 1;
+  visibility: visible;
+  padding: 20px 100px !important;
+}
+@media (max-width: 768px) {
+  .adding-staff-box .register-table-box {
+    position: relative;
+    width: 100%;
+  }
+  .adding-staff-box .form-box {
+    width: 100%;
+  }
+  .adding-staff .form-box.toggle {
+    height: 100%;
+    padding: 20px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .adding-staff-box .register-table-box {
+    position: relative;
+    width: 100%;
+  }
+  .adding-staff-box .form-box {
+    width: 100%;
+  }
+  .adding-staff .form-box.toggle {
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1370px) {
+  .adding-staff-box .register-table-box {
+    position: relative;
+    width: 100%;
+  }
+  .adding-staff-box .form-box {
+    width: 100%;
+  }
+  .adding-staff .form-box.toggle {
+    height: 50vh;
+  }
+}
+@media (min-width: 1920px) {
+  .adding-staff .form-box.toggle {
+    height: 55vh;
+  }
+}

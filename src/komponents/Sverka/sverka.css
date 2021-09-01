@@ -1,0 +1,27 @@
+.sverka-box {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  padding: 30px;
+}
+.sverka-box .filter-box {
+  background: rgb(244, 245, 247);
+}
+.sverka-box .filter-box input {
+  background: rgb(228, 233, 243);
+  border: none;
+  color: #999;
+}
+.sverka-box table {
+  margin-top: 30px;
+  color: #333;
+}
+.sverka-box .fa-print {
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+}
+.sverka-box .fa-print:hover {
+  color: #333;
+}

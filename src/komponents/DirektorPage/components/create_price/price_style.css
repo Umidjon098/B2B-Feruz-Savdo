@@ -1,0 +1,12 @@
+.modal-wrapper {
+  position: absolute;
+  width: 92%;
+}
+.modal-wrapper .table-responsive {
+  margin: 0;
+}
+.modal-wrapper .modal-header {
+  background: #2a3142;
+  color: #fff;
+  border: none;
+}
